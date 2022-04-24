@@ -3,11 +3,15 @@
 
 // Also createStore function replaced with configureStore function
 
-import { productListReducer } from './reducers/productReducers';
+import {
+  productListReducer,
+  productDetailsReducer,
+} from './reducers/productReducers';
 import { configureStore } from '@reduxjs/toolkit';
 
 const reducer = {
   productList: productListReducer,
+  productDetails: productDetailsReducer,
 };
 
 const initialState = {};
